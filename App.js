@@ -48,7 +48,7 @@ function handleReturnedData(results){
 		
 	table = table+'<tr>';	
 	table = table +'<td>'+ results.results[i].trackName+'</td>';
-	table = table +'<td><a href='results.results[i].artistViewUrl'>'+results.results[i].artistName+'</a></td>';
+	table = table +'<td><a href='+ results.results[i].artistViewUrl +'>'+results.results[i].artistName+'</a></td>';
 	table = table +'<td><audio src='+results.results[i].previewUrl +' preload="none" controls></audio></td>';
 	table = table +'<td align="center"><img src='+ results.results[i].artworkUrl100+'></img></td>';
 	table = table +'</td>';
