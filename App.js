@@ -48,16 +48,16 @@ function handleReturnedData(results){
 		
 	table = table+'<tr>';	
 	table = table +'<td>'+ results.results[i].trackName+'</td>';
-	table = table +'<td>'+ results.results[i].artistName+'</td>';
+	table = table +'<td><a href='results.results[i].artistViewUrl'>'+results.results[i].artistName+'</a></td>';
 	table = table +'<td><audio src='+results.results[i].previewUrl +' preload="none" controls></audio></td>';
-	table = table +'<td><img src='+ results.results[i].artworkUrl30+'></img></td>';
+	table = table +'<td align="center"><img src='+ results.results[i].artworkUrl100+'></img></td>';
 	table = table +'</td>';
 	}
 	jQuery('#myTableBody').html(table);;
 	$('#myTableBody').pageMe({pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:10});
 }
 
-//Bootply v1.2.1 
+//code by Dataffect
 
     $.fn.pageMe = function(opts){
     var $this = this,
