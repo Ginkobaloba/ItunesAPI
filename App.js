@@ -5,7 +5,8 @@ $('#submit').click(function(){
 		setupUrl(inputTerm, inputMedia);
 	$("#command_line").val("")
 });
- $("form").submit(function() {
+$("form").submit(function () {
+        window.navigator.vibrate([100, 30, 100, 30, 100, 30, 200, 30, 200, 30, 200, 30, 100, 30, 100, 30, 100]);
         var inputTerm = $("#command_line").val();
 		var inputMedia =  $("#command_filter").val();
 		if (inputTerm == "?"){inputTerm = "?!"}
